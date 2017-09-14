@@ -16,3 +16,5 @@ git push origin master
   * images - Image files (png, jpg, etc.)
   * js - JavaScript files
 * docs - project documentation (e.g. design, requirements, etc) 
+
+<link href=css/styles.css/> etc...
