@@ -1,0 +1,199 @@
+body {
+    background-color: Gainsboro;
+    font-family: Algerian;
+}
+#main {
+    width: 100%;
+    height: 250px;
+    background: url("seahawk.jpg") no-repeat center;
+    padding-top: 50px;
+    background-color: Chartreuse;
+}
+#banner {
+    font-family: Georgia;
+    font-size: 500%;
+    text-align: center;
+    color: Chartreuse;
+    padding-top: 15px;
+    padding-right: 150px;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#banner2 {
+    font-family: Georgia;
+    font-size: 250%;
+    text-align: center;
+    color: Chartreuse;
+    padding-top: 15px;
+    padding-right: 150px;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#redirect {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 290px;
+    position: relative; 
+    top: -63px;
+}
+#discussionTitle {
+    font-family: Georgia;
+    font-size: 200%;
+    text-align: center;
+    color: Chartreuse;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#nav {
+    font: 200% Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: DarkBlue;
+    text-shadow: 0px 2px 3px #555;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navItem {
+    float: left;
+}
+#navLink {
+    display: block;
+    color: DarkBlue;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+#caption {
+    font-family: Georgia;
+    font-size: 250%;
+    text-align: left;
+    color: DarkBlue;
+    padding-top: 15px;
+    padding-right: 150px;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: xx-large;
+    text-align: center;
+}
+p,
+li {
+    color: green;
+}
+em {
+    color: blue;
+}
+ul {
+    list-style-type: square;
+    line-height: 2;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+img {
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: black;
+    overflow: hidden;
+    float: left;
+    width: 25%;
+}
+figcaption {
+    clear: both;
+
+}
+aside {
+    float: right;
+    width: 50%;
+}
+div {
+    clear: both;
+}
+#p_align {
+    text-align: right;
+}
+.nested_list li {
+    list-style-type: circle;
+    color: red;
+}
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+pre {
+    background-color: white;
+    border: 2px dashed;
+    padding: 5px;
+    margin: 3px;
+}
+table {
+    width: 100%;
+     color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  border-collapse: collapse; border-spacing: 0; 
+}
+
+th,
+td {
+    border: 0 none; 
+    height: 30px;
+}
+
+th {
+    background: linear-gradient(#333 0%,#444 100%);
+    color: #FFF; font-weight: bold;
+    height: 40px;
+}
+       
+tr:nth-child(even) td { background: MediumSpringGreen; }   
+     
+tr:nth-child(odd) td { background: LightCyan; }  
+
+tr td:hover { background: Chartreuse; color: DarkBlue; } 
+
+
