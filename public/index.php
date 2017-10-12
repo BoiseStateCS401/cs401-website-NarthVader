@@ -29,6 +29,7 @@ require_once ('navigation.php');
                     </tbody>
                 </table>
             </div>
+            <div> test </div>
             <div class="row-fluid">
                 <form id="new-user">
                     <input type="text" name="username" placeholder="Username" />
