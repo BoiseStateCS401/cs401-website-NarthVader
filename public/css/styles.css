@@ -7,13 +7,13 @@ body {
     height: 18%;
     background: url("https://sportsfly.cbsistatic.com/fly-703/bundles/sportsmediacss/images/team-logos/nfl/SEA.svg") no-repeat center;
     padding-top: 1.5%;
-    background-color: Chartreuse;
+    background-color: DarkBlue;
 }
 #banner {
     font-family: Georgia;
     font-size: 500%;
     text-align: center;
-    color: DarkBlue;
+    color: Chartreuse;
     padding-top: 15px;
     padding-right: 150px;
     text-shadow: 0 1px 0 #ccc,
