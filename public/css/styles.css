@@ -74,25 +74,6 @@ body {
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
-#nav {
-    font: 200% Tahoma, Helvetica, Arial, Sans-Serif;
-    text-align: center;
-    color: DarkBlue;
-    text-shadow: 0px 2px 3px #555;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#navItem {
-    float: left;
-}
-#navLink {
-    display: block;
-    color: DarkBlue;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-}
 #caption {
     font-family: Georgia;
     font-size: 250%;
@@ -229,13 +210,32 @@ div#navigation {
 }
 
 #navigation a:hover {
-  color: #333;
+  color: DarkBlue;
 }
 
 #navigation #currentpage > a {
   background: #fefefe;
   border-bottom: 2px solid #fefefe;
-  color: #333;
+  color: DarkBlue;
   border-radius: 10px 10px 0px 0px;
 }
 
+#nav {
+    font: 200% Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: DarkBlue;
+    text-shadow: 0px 2px 3px #555;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navItem {
+    float: left;
+}
+#navLink {
+    display: block;
+    color: DarkBlue;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
