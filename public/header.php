@@ -14,7 +14,7 @@
 <body>
     <header id="main">
         <figure>
-            <a href="index.html">
+            <a href="index.php">
                 <img id="redirect" src="http://images.1iphone5wallpaper.com/Gallery/12_Sports/1-iPhone-5-Wallpaper-Seahawks-28.jpg" alt="Back to the 'Clink" title="Back to the 'Clink" />
             </a>
         </figure>
