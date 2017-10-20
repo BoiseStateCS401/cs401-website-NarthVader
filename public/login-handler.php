@@ -1,7 +1,7 @@
 <?php
 session_start();
 $username       = $_POST['username'];
-$password       = $_POST['password'];
+$password       = $_POST['user-password'];
 $error = array();
 
 function valid_length($field, $min, $max) {

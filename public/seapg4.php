@@ -13,7 +13,7 @@ require_once ('navigation.php');
             <p>
 
                 <label for="username">username:</label>
-                <input type="text" id="username" name="username" maxlength=50 value="<?= $_SESSION['presets']['username'] ?>"required>
+                <input type="text" id="username" name="username" maxlength=50 value="<?= $_SESSION['presets']['username'] ?>" required>
                 <?php
 
 if (isset($_SESSION['error']['username']))
@@ -24,12 +24,12 @@ if (isset($_SESSION['error']['username']))
             </p>
             <p>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="user-password" required>
                 <?php
 
 if (isset($_SESSION['error']['password']))
     { ?>
-        <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['password'] ?></span>
+        <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['user-password'] ?></span>
 <?php
     } ?>
             </p>
