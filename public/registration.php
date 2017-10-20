@@ -1,13 +1,11 @@
-
 <?php
 session_start();
 ?>
-
-<html>
-<head>
-	<title>Registration.php</title>
-</head>
-<body>
+<?php
+$thisPage = "Register!!!";
+require_once ('header.php');
+?>
+	<h1 id="banner2">Welcome to the Team! Register below!</h1>
 	<section>
 		<form method="POST" action="registration-handler.php">
 			<fieldset>
@@ -61,5 +59,6 @@ if (isset($_SESSION['error']['password_match']))
 		</form>
 		
 	</section>
-</body>
-</html>
+ <?php
+require_once ('footer.php');
+?>
