@@ -1,4 +1,5 @@
 <?php
+session_start();
 $thisPage = "The Clink";
 require_once ('header.php');
 require_once ('navigation.php');
@@ -30,10 +31,20 @@ require_once ('navigation.php');
                 </table>
             </div>
             <div class="row-fluid">
-                <form id="new-user">
-                    <input type="text" name="username" placeholder="Username" />
-                    <input type="text" name="message" placeholder="Message" />
-                    <a id="send" class="btn btn-primary">SEND</a>
+                <form method="POST" action="comment-handler.php">
+            <fieldset>
+            <p>
+
+                <label for="comment">comment</label>
+                <input type="text" id="comment" name="comment" maxlength=999 placeholder="Comment here..." >
+                <?php
+
+if (isset($_SESSION['error']['comment']))
+    { ?>
+        <span id="comment" class="error"> <?php echo $_SESSION['error']['comment'] ?></span>
+<?php
+    } ?>
+            </p>
                 </form>
             </div>
         </div>
