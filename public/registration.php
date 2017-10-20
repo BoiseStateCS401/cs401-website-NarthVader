@@ -14,7 +14,7 @@ session_start();
 			<p>
 
 				<label for="fullName">username:</label>
-				<input type="text" id="fullName" name="fullName" maxlength=50 required>
+				<input type="text" id="fullName" name="fullName" maxlength=50 value="<?= $_SESSION['presets']['fullName'] ?>" required>
 				<?php
 
 if (isset($_SESSION['error']['fullName']))
@@ -25,7 +25,7 @@ if (isset($_SESSION['error']['fullName']))
 			</p>
 			<p>
 				<label for="email">email:</label>
-				<input type="email" id="email" name="email" required>
+				<input type="email" id="email" name="email" value="<?= $_SESSION['presets']['email'] ?>"required>
 				<?php
 
 if (isset($_SESSION['error']['email']))

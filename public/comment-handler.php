@@ -1,7 +1,6 @@
 <?php
 session_start();
 $comment       = $_POST['comment'];
-$valid          = true;
 $errors = array();
 
 function valid_length($field, $min, $max) {
@@ -10,7 +9,6 @@ function valid_length($field, $min, $max) {
 }
 if (!valid_length($comment, 1, 999)) {
     $error['comment'] = "Why is your comment not working?... You're probably malicious";
-    $valid         = false;
 }
 ?>
 
@@ -19,6 +17,7 @@ if (empty($error)) {
     header('Location: index.php');
 } else {
 	$_SESSION['error'] = $error;
+	$_SESSION['presets'] = array('comment' => htmlspecialchars($comment));
     header('Location: index.php');
 }
 ?>

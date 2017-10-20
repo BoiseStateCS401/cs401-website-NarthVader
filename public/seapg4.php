@@ -13,7 +13,7 @@ require_once ('navigation.php');
             <p>
 
                 <label for="username">username:</label>
-                <input type="text" id="username" name="username" maxlength=50 required>
+                <input type="text" id="username" name="username" maxlength=50 value="<?= $_SESSION['presets']['username'] ?>"required>
                 <?php
 
 if (isset($_SESSION['error']['username']))

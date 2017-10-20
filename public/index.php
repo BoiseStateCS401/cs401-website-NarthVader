@@ -36,7 +36,7 @@ require_once ('navigation.php');
             <p>
 
                 <label for="comment">comment</label>
-                <input type="text" id="comment" name="comment" maxlength=999 placeholder="Comment here..." >
+                <input type="text" id="comment" name="comment" maxlength=999 placeholder="Comment here..." value="<?= $_SESSION['presets']['comment'] ?>">
                 <?php
 
 if (isset($_SESSION['error']['comment']))
