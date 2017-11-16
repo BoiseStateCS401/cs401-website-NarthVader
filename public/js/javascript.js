@@ -1,3 +1,4 @@
+$(document).ready(
 function changeCSS(cssFile, cssLinkIndex) {
 
     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
@@ -13,3 +14,4 @@ function changeCSS(cssFile, cssLinkIndex) {
 function registration() {
         location.href = "registration.php";
 }
+)};
