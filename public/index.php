@@ -4,12 +4,6 @@ $thisPage = "The Clink";
 require_once ('header.php');
 require_once ('navigation.php');
 ?>
-    <p>
-    Do you prefer a black and white text? If so...
-    <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
-
-    <script src="/js/javascript.js"></script>
-    </p>
     <section>
         <div class="container-fluid">
             <div class="row-fluid">
@@ -54,6 +48,11 @@ if (isset($_SESSION['error']['comment']))
                 </form>
             </div>
         </div>
+    <p>
+    Do you prefer a black and white text? If so...
+    <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
+    <script src="/js/javascript.js"></script>
+    </p>
     </section>
     <?php
 require_once ('footer.php');
