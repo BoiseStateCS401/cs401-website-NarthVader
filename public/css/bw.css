@@ -1,0 +1,11 @@
+body {
+    background-color: Gainsboro;
+    font-family: Algerian;
+}
+#redirect {
+    height: auto; 
+    width: auto; 
+    max-width: 10%; 
+    max-height: 10%;
+    position: relative; 
+}
