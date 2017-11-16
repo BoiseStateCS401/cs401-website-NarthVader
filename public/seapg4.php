@@ -38,7 +38,7 @@ if (isset($_SESSION['error']['password']))
         </form>
 <h1 id="banner2">Not a User? Register!!!</h1>
 
-<button onclick="registration()" class="float-left submit-button" >Register</button>
+<button id="registration" class="float-left submit-button">Register</button>
 
 <script src="/js/javascript.js"></script>
 
@@ -47,7 +47,8 @@ if (isset($_SESSION['error']['password']))
     </div>
     <p>
     Do you prefer a black and white text? If so...
-    <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
+    <button id="bwbutton">B/W Text</button>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/javascript.js"></script>
     </p>
    <?php

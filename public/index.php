@@ -50,7 +50,8 @@ if (isset($_SESSION['error']['comment']))
         </div>
     <p>
     Do you prefer a black and white text? If so...
-    <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
+    <button id="bwbutton">B/W Text</button>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/javascript.js"></script>
     </p>
     </section>
