@@ -1,5 +1,4 @@
 
-$(document).ready( function() { 
 
 function changeCSS(cssFile, cssLinkIndex) {
 
@@ -17,4 +16,5 @@ function registration() {
         location.href = "registration.php";
 }
 
+$(document).ready( function() { 
  });
