@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/javascript.js"></script>
 </head>
 <body>
     <header id="main">

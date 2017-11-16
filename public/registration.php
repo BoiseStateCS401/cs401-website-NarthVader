@@ -57,12 +57,7 @@ if (isset($_SESSION['error']['password_match']))
 			<input type="submit" value="Register">
 			</fieldset>
 		</form>
-	<p>
-    Do you prefer a black and white text? If so...
-    <button id="bwbutton">B/W Text</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/javascript.js"></script>
-    </p>	
+	
 	</section>
  <?php
 require_once ('footer.php');

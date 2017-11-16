@@ -21,14 +21,6 @@ require_once ('navigation.php');
             </figure>
         </section>
     </div>
-   <p>
-    Do you prefer a black and white text? If so...
-    <button id="bwbutton">B/W Text</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/javascript.js"></script>
-    </p>
-
-
-    <?php
+<?php
 require_once ('footer.php');
 ?>

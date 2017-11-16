@@ -38,19 +38,10 @@ if (isset($_SESSION['error']['password']))
         </form>
 <h1 id="banner2">Not a User? Register!!!</h1>
 
-<button id="registration" class="float-left submit-button">Register</button>
-
-<script src="/js/javascript.js"></script>
-
-        <p id="banner2">This will look A LOT different and will be functional as the semester progresses...</p>
+<button id="register">Register</button>
         </section>
     </div>
-    <p>
-    Do you prefer a black and white text? If so...
-    <button id="bwbutton">B/W Text</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/javascript.js"></script>
-    </p>
+   
    <?php
 require_once ('footer.php');
 ?>

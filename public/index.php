@@ -51,8 +51,10 @@ if (isset($_SESSION['error']['comment']))
     <p>
     Do you prefer a black and white text? If so...
     <button id="bwbutton">B/W Text</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/javascript.js"></script>
+    </p>
+    <p>
+    Revert back to flashy, styled content?...
+    <button id="revert">Revert</button>
     </p>
     </section>
     <?php
