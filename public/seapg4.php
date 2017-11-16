@@ -45,6 +45,11 @@ if (isset($_SESSION['error']['password']))
         <p id="banner2">This will look A LOT different and will be functional as the semester progresses...</p>
         </section>
     </div>
+    <p>
+    Do you prefer a black and white text? If so...
+    <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
+    <script src="/js/javascript.js"></script>
+    </p>
    <?php
 require_once ('footer.php');
 ?>

@@ -5,7 +5,7 @@ require_once ('header.php');
 require_once ('navigation.php');
 ?>
     <p>
-    Do you prefer a better contrasted text? If so...
+    Do you prefer a black and white text? If so...
     <button onclick="changeCSS('css/bw.css', 0)" class="float-left submit-button" >Click Here!</button>
 
     <script src="/js/javascript.js"></script>
