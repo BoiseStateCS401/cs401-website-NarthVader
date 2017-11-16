@@ -1,33 +1,23 @@
 $(document).ready(function(){
     $("#register").click(function(){
        location.href = "registration.php";
-     });
+     }); 
+    
     $("#bwbutton").on("click", changeCSS());
-    function changeCSS() {
+     function changeCSS() {
 
-      var oldlink = document.getElementsByTagName("link").item(0);
-
-      var newlink = document.createElement("link");
-      newlink.setAttribute("rel", "stylesheet");
-      newlink.setAttribute("type", "text/css");
-      newlink.setAttribute("href", 'css/bw.css');
-
+       var oldlink = document.getElementsByTagName("link").item(0);
+       var newlink = document.createElement("link");
+       newlink.setAttribute("rel", "stylesheet");
+       newlink.setAttribute("type", "text/css");
+     newlink.setAttribute("href", 'css/bw.css');
       document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-  };
-  
+   };
+
 });
 
+    
 
-  // $("#revert").on("click", revert());
 
-  // function revert() {
 
-  //     var oldlink = document.getElementsByTagName("link").item(0);
-
-  //     var newlink = document.createElement("link");
-  //     newlink.setAttribute("rel", "stylesheet");
-  //     newlink.setAttribute("type", "text/css");
-  //     newlink.setAttribute("href", 'css/styles.css');
-
-  //     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-  // };
+   

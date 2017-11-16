@@ -52,10 +52,6 @@ if (isset($_SESSION['error']['comment']))
     Do you prefer a black and white text? If so...
     <button id="bwbutton">B/W Text</button>
     </p>
-    <p>
-    Revert back to flashy, styled content?...
-    <button id="revert">Revert</button>
-    </p>
     </section>
     <?php
 require_once ('footer.php');
