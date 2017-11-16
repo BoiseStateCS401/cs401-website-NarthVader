@@ -37,14 +37,12 @@ if (isset($_SESSION['error']['password']))
             </fieldset>
         </form>
 <h1 id="banner2">Not a User? Register!!!</h1>
-<button id="registration" class="float-left submit-button" >Register</button>
 
-<script type="text/javascript">
-    document.getElementById("registration").onclick = function () {
-        location.href = "registration.php";
-    };
-</script>
+/////////////////////////////************************************/////////////////////////
+<button onclick="registration()" class="float-left submit-button" >Register</button>
 
+<script src="/js/javascript.js"></script>
+/////////////////////////////*****************************////////////////////////////
         <p id="banner2">This will look A LOT different and will be functional as the semester progresses...</p>
         </section>
     </div>
