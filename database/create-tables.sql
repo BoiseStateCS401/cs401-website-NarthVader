@@ -31,6 +31,6 @@ INSERT INTO users (email, password, name) VALUES('sean@school.edu', 'password', 
 
 -- use insert to populate the posts table 
 INSERT INTO comments (user_id, message, posted) VALUES(
-	(SELECT id FROM users WHERE username = 'Nate'), 'Go Seahawks!!!', '2015-09-13 12:30:10');
+	(SELECT id FROM users WHERE name = 'Nate'), 'Go Seahawks!!!', '2015-09-13 12:30:10');
 INSERT INTO comments (user_id, message, posted) VALUES (
-	(SELECT id FROM users WHERE username = 'Sean'), 'Hi, I\'m Sean!', '2015-09-14 8:32:10');
+	(SELECT id FROM users WHERE name = 'Sean'), 'Hi, I\'m Sean!', '2015-09-14 8:32:10');

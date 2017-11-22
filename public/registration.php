@@ -12,47 +12,43 @@ require_once ('header.php');
 			<p>
 
 				<label for="fullName">username:</label>
-				<input type="text" id="fullName" name="fullName" maxlength=50 value="<?= $_SESSION['presets']['fullName'] ?>" required>
+				<input type="text" id="fullName" name="fullName" maxlength=50 value="<?=$_SESSION['presets']['fullName'] ?>" required>
 				<?php
-
 if (isset($_SESSION['error']['fullName']))
-	{ ?>
+{ ?>
         <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['fullName'] ?></span>
 <?php
-	} ?>
+} ?>
 			</p>
 			<p>
 				<label for="email">email:</label>
-				<input type="email" id="email" name="email" value="<?= $_SESSION['presets']['email'] ?>"required>
+				<input type="email" id="email" name="email" value="<?=$_SESSION['presets']['email'] ?>"required>
 				<?php
-
 if (isset($_SESSION['error']['email']))
-	{ ?>
+{ ?>
         <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['email'] ?></span>
 <?php
-	} ?>
+} ?>
 			</p>
 			<p>
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" required>
 				<?php
-
 if (isset($_SESSION['error']['password']))
-	{ ?>
+{ ?>
         <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['password'] ?></span>
 <?php
-	} ?>
+} ?>
 			</p>
 			<p>
 				<label for="password_match">Password again:</label>
 				<input type="password" id="password_match" name="password_match" required>
 				<?php
-
 if (isset($_SESSION['error']['password_match']))
-	{ ?>
+{ ?>
         <span id="fullNameError" class="error"> <?php echo $_SESSION['error']['password_match'] ?></span>
 <?php
-	} ?>
+} ?>
 			</p>
 			<input type="submit" value="Register">
 			</fieldset>
