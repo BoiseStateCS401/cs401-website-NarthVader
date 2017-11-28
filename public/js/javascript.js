@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
     $("#register").click(function(){
        location.href = "registration.php";
      }); 
@@ -14,7 +14,7 @@ $(document).ready(function(){
    //    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
    // };
 
-});
+
 
     
 
