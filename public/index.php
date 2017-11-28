@@ -9,7 +9,7 @@ require_once ('navigation.php');
             <div class="row-fluid">
                 <h1 id="banner2">Have a GOOD opinion? SHARE HERE!!!</h1>
                 <table class="table table-bordered table-striped">
-                    <caption id="discussionTitle">Talk Your Best Trash</caption>
+                    <caption id="discussionTitle">Register and LogIn To Talk Your Best Trash</caption>
                     <thead>
                         <tr>
                             <th>
@@ -21,18 +21,16 @@ require_once ('navigation.php');
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td colspan="2">No opinions... yet...</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">But there will be!!!</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
-            <div class="row-fluid">
+ <?php 
+          if(isset($_SESSION['access']) && ($_SESSION['access']===true)) { ?>
+           <div class="row-fluid">
                 <form method="POST" action="comment-handler.php">
             <fieldset>
+            
             <p>
 
                 <label for="comment">comment</label>
@@ -47,6 +45,10 @@ if (isset($_SESSION['error']['comment']))
                 </form>
             </div>
         </div>
+        <?php   }
+        else { ?>
+        <?php  } ?>
+
     <p>
     Do you prefer a black and white text? If so...
     <button id="bwbutton">B/W Text</button>

@@ -1,7 +1,9 @@
 <?php
+require_once ('Dao.php');
 session_start();
 $comment       = $_POST['comment'];
 $errors = array();
+$dao = new Dao();
 
 function valid_length($field, $min, $max) {
 	$trimmed = trim($field);
@@ -14,6 +16,16 @@ if (!valid_length($comment, 1, 999)) {
 
 <?php
 if (empty($error)) {
+	if ($dao->addComment($_SESSION['loggedID'], $comment))
+        {
+            echo "Good to go!";
+            header('Location: index.php');
+        }
+        else
+        {
+            $error['undefined'] = "Something is janky. Try changing your comment/face por favor!";
+            header('Location: index.php');
+        }
     header('Location: index.php');
 } else {
 	$_SESSION['error'] = $error;

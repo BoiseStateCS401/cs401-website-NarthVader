@@ -156,6 +156,17 @@ class Dao
             throw new Exception("Invalid user. $username");
         }
     }
+    public function addComment($uid, $message)
+    {
+            
+            $conn = $this->getConnection();
+            $stmt = $conn->prepare("INSERT INTO comments (user_id, message)
+									 VALUES (:user_id, :message)");
+            $stmt->bindParam(":user_id", $uid);
+            $stmt->bindParam(":message", $message);
+            $stmt->execute();
+        
+    }
 
     public function deletePostById($id)
     {
