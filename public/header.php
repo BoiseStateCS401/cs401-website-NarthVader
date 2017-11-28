@@ -26,7 +26,7 @@ if(session_status() === PHP_SESSION_NONE) {
                 <img id="redirect" src="http://images.1iphone5wallpaper.com/Gallery/12_Sports/1-iPhone-5-Wallpaper-Seahawks-28.jpg" alt="Back to the 'Clink" title="Back to the 'Clink" />
             </a>
         </figure>
-        <aside class="floating-btn"> 
+        <aside class="floating-btn" color="Chartreuse"> 
         <?php 
           if(isset($_SESSION['access']) && ($_SESSION['access']===true)) { ?>
             <a href="logout.php">LogOut</a>
