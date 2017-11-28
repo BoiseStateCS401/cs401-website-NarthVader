@@ -9,6 +9,9 @@ body {
     padding-top: 1.5%;
     background-color: DarkBlue;
 }
+#logout {
+  color: Chartreuse;
+}
 #banner {
     font-family: Georgia;
     font-size: 500%;

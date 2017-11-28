@@ -29,7 +29,7 @@ if(session_status() === PHP_SESSION_NONE) {
         <aside class="floating-btn" > 
         <?php 
           if(isset($_SESSION['access']) && ($_SESSION['access']===true)) { ?>
-            <a href="logout.php" color="Chartreuse">LogOut</a>
+            <a id="logout href="logout.php">LogOut</a>
         <?php   }
         else { ?>
             <a href="seapg4.php">LogIn</a>
