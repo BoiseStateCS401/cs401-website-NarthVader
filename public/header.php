@@ -32,7 +32,7 @@ if(session_status() === PHP_SESSION_NONE) {
             <a id="logout" href="logout.php">LogOut</a>
         <?php   }
         else { ?>
-            <a href="seapg4.php">LogIn</a>
+            <a id="logout" href="seapg4.php">LogIn</a>
         <?php  } ?>
           </aside>
         <h1 id="banner"><?= $thisPage; ?></h1>
