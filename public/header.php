@@ -1,5 +1,8 @@
-<?php if(session_status()===P HP_SESSION_NONE) { session_start(); } ?>
-<!DOCTYPE html>
+<?php 
+if(session_status() === PHP_SESSION_NONE) {
+  session_start();  
+}
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,7 +28,7 @@
             </a>
         </figure>
         <aside class="floating-btn">
-            <?php if(isset($_SESSION[ 'access']) && ($_SESSION[ 'access']===true)) { ?>
+            <?php if(isset($_SESSION['access']) && ($_SESSION['access']===true)) { ?>
             <a id="logout" href="logout.php">LogOut</a>
             <?php } else { ?>
             <a id="logout" href="seapg4.php">LogIn</a>
