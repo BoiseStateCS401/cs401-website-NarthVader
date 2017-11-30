@@ -1,4 +1,4 @@
-<?php session_start(); $thisPage="The Clink" ; require_once ( 'header.php'); require_once ( 'navigation.php'); require_once ( 'Dao.php');?>
+<?php session_start(); $thisPage="The Clink" ; require_once ('header.php'); require_once ('navigation.php'); require_once ('Dao.php');?>
 <section>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -32,7 +32,7 @@
                 </table>
                 <?php } ?>
         </div>
-        <?php if(isset($_SESSION[ 'access']) && ($_SESSION[ 'access']===true)) { ?>
+        <?php if(isset($_SESSION['access']) && ($_SESSION['access']===true)) { ?>
         <div class="row-fluid">
             <form method="POST" action="comment-handler.php">
                 <fieldset>
@@ -41,7 +41,7 @@
 
                         <label for="comment">comment</label>
                         <input type="text" id="comment" name="comment" maxlength=999 placeholder="Comment here..." value="<?=$_SESSION['presets']['comment'] ?>">
-                        <?php if (isset($_SESSION[ 'error'][ 'comment'])) { ?>
+                        <?php if (isset($_SESSION['error']['comment'])) { ?>
                         <span id="comment" class="error"> <?php echo $_SESSION['error']['comment'] ?></span>
                         <?php } ?>
                     </p>
@@ -51,4 +51,4 @@
     <?php } else { ?>Register and Log In to Leave a Comment!
     <?php } ?>
 </section>
-<?php require_once ( 'footer.php'); ?>
+<?php require_once ('footer.php'); ?>
