@@ -36,7 +36,7 @@ if (isset($_SESSION['error']['password']))
         </form>
 <h1 id="banner2">Not a User? Register!!!</h1>
 <a id="logout" href="registration.php" class="button">Register</a>
-<!-- <button id="register">Register</button> -->
+<button id="register">Register</button>
         </section>
     </div>
    
