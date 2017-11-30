@@ -2,6 +2,9 @@ $(document).ready(function(){
     $("#register").click(function(){
        location.href = "registration.php";
      }); 
+    $("#return").click(function(){
+       location.href = "index.php";
+     }); 
     
    //  $("#bwbutton").on("click", changeCSS());
    //   function changeCSS() {
