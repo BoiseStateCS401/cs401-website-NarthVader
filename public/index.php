@@ -22,10 +22,10 @@
                     <?php foreach ($comments as $comment) { ?>
                     <tr>
                         <td>
-                            <?=$comment["message"]; ?>
+                            <?=htmlspecialchars($comment["message"]); ?>
                         </td>
                         <td>
-                            <?=$comment["posted"]; ?>
+                            <?=htmlspecialchars($comment["posted"]); ?>
                         </td>
                     </tr>
                     <?php } ?>
