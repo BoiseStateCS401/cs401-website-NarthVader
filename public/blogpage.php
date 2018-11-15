@@ -60,7 +60,7 @@ require_once ('navigation.php');
                 @fred<br>
                 ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br><br>
                 And now since we used swap!, when you dereference our zombie friend fred, he's actually been changed! I hope that this has been somewhat informative. If you want more information here's my source and where I've gathered about 80% of my Clojure information from. It's presented in an awesome, fun, and informative manner, plus it's FREE!!!<br>
-                <a href="https://www.braveclojure.com/">
+                <a href="https://www.braveclojure.com/">Clojure For The Brave and True</a>
 
             </p>
             
