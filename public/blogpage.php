@@ -4,7 +4,7 @@ require_once ('header.php');
 require_once ('navigation.php');
 ?>
     <div>
-        <p id="banner2">Trade News From Around the League</p>
+        <p id="banner2">CS 398 Blog -- Clojure and Immutability</p>
         <section>
             <figure>
                 <a href="https://www.cbssports.com/nfl/news/2017-nfl-free-agency-trade-happy-patriots-big-winners-top-receivers-losers/">
