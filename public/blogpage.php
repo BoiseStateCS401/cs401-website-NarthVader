@@ -16,7 +16,7 @@ require_once ('navigation.php');
                 ; => "Rosanthony"<br>
                 <br>
                 (let [great-baby-name "Bloodthunder"]<br>
-                <&nbsp><&nbsp>great-baby-name)<br>
+                &nbsp;&nbsp;great-baby-name)<br>
                 ; => "Bloodthunder"<br>
                 <br>
                 great-baby-name<br>
@@ -31,34 +31,35 @@ require_once ('navigation.php');
                 [1 2 3]<br>
                 Some fancy tricks for getting around this. Defining the value as an atom, which, under specific conditions can be changed, but it's instead a pointer connecting the two values. Below is another great example from Clojure for the Brave and True:<br>
                 def fred (atom {:cuddle-hunger-level 0<br>
-                <&nbsp><&nbsp>:percent-deteriorated 0}))<br>
+                &nbsp;&nbsp;:percent-deteriorated 0}))<br>
                 <br>;fred is now a variable that is defined as an Atom, which is a data structure in Clojure that allows for some flexibility when you use macros such as swap!, etc. Macros that change behavior of atoms are signified with a !<br><br>
                 (swap! fred<br>
-                <&emsp>(fn [current-state]<br>
-                <&emsp>(merge-with + current-state {:cuddle-hunger-level 1})))<br>
-               ; => {:cuddle-hunger-level 1, :percent-deteriorated 0}<br>
-               @fred<br>
-                    ; => {:cuddle-hunger-level 1, :percent-deteriorated 0}<br>
-            (swap! fred<br>
-       <&emsp>(fn [current-state]<br>
-         <&emsp><&nbsp><&nbsp>(merge-with + current-state {:cuddle-hunger-level 1<br>
-                                     <&emsp><&emsp><&nbsp><&nbsp> :percent-deteriorated 1})))<br>
-; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
-Pretty cool, huh? Now we can leverage the power of functional programming and pass this concept to a function that will do it for us!<br>
-(defn increase-cuddle-hunger-level<br>
-  <&nbsp><&nbsp>[zombie-state increase-by]<br>
-  <&nbsp><&nbsp>(merge-with + zombie-state {:cuddle-hunger-level increase-by}))<br>
-  <&nbsp><&nbsp>(increase-cuddle-hunger-level @fred 10)<br>
-; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
-this is just a return however and a dereference of fred still results in <br>
-@fred<br>
-; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
-  but we use this function with swap, and...<br>
-  (swap! fred increase-cuddle-hunger-level 10)<br>
-; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
-<br>
-@fred<br>
-; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
+                (fn [current-state]<br>
+                (merge-with + current-state {:cuddle-hunger-level 1})))<br>
+                ; => {:cuddle-hunger-level 1, :percent-deteriorated 0}<br>
+                @fred<br>
+                ; => {:cuddle-hunger-level 1, :percent-deteriorated 0}<br>
+                (swap! fred<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;(fn [current-state]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(merge-with + current-state {:cuddle-hunger-level 1<br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :percent-deteriorated 1})))<br>
+                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
+                Pretty cool, huh? Now we can leverage the power of functional programming and pass this concept to a function that will do it for us!<br>
+                (defn increase-cuddle-hunger-level<br>
+                &nbsp;&nbsp;[zombie-state increase-by]<br>
+                &nbsp;&nbsp;(merge-with + zombie-state {:cuddle-hunger-level increase-by}))<br>
+                &nbsp;&nbsp;(increase-cuddle-hunger-level @fred 10)<br>
+                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
+                this is just a return however and a dereference of fred still results in <br>
+                @fred<br>
+                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
+                  but we use this function with swap, and...<br>
+                (swap! fred increase-cuddle-hunger-level 10)<br>
+                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
+                <br>
+                @fred<br>
+                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
+                And now since we used swap!, when you dereference our zombie friend fred, he's actually been changed! I hope that this has been somewhat informative. If you want more information here's my source and where I've gathered about 80% of my Clojure information from. It's presented in an awesome, fun, and informative manner, plus it's FREE!!! https://www.braveclojure.com/
 
             </p>
             
