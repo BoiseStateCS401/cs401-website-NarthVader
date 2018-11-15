@@ -6,19 +6,11 @@ require_once ('navigation.php');
     <div>
         <p id="banner2">CS 398 Blog -- Clojure and Immutability</p>
         <section>
-            <figure>
-                <a href="https://www.cbssports.com/nfl/news/2017-nfl-free-agency-trade-happy-patriots-big-winners-top-receivers-losers/">
-                    <img src="http://www.seahawks.com/sites/seahawks.com/files/styles/borealis_article_image_respondlarge/public/_article_thumbnails/rm1_54681.jpg?itok=h4i-qBir&timestamp=1504576653" alt="Richardson Trade" title="NFL Trade News" />
-                </a>
-                <figcaption id="caption"><a href="https://www.cbssports.com/nfl/news/2017-nfl-free-agency-trade-happy-patriots-big-winners-top-receivers-losers/">NFL Trade News</a></figcaption>
-            </figure>
-            <p id="banner2">League Injury Report</p>
-            <figure>
-                <a href="http://www.espn.com/nfl/injuries">
-                    <img src="http://dailysnark.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-01-at-7.55.58-PM.png" alt="Injury Report" title="Injury Report" />
-                </a>
-                <figcaption id="caption"><a href="http://www.espn.com/nfl/injuries">Weekly Injury Report</a></figcaption>
-            </figure>
+            <p> <b>What Is Immutability???</b>
+                Immutability is a concept that once created, data cannot be changed. This stands in stark contrast to the concept of Object Oriented programming
+                in which everything relies on the behavior of side-effects in order to run your program. 
+            </p>
+            
         </section>
     </div>
 <?php
