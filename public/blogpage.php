@@ -20,7 +20,7 @@ require_once ('navigation.php');
                 ; => "Bloodthunder"<br>
                 <br>
                 great-baby-name<br>
-                ; => "Rosanthony"<br>
+                ; => "Rosanthony"<br><br>
                 Since great-baby-name is defined as "Rosanthony", the let binding that proceeds it has no effect on the global scope of the variable. In the scope of the let binding, there is another value that happens to be named the same, but as far as the programs concerned, great-baby-name is defined as "Rosanthony" now and forever. That is, until you use some nifty tricks to get around this. Java also has the concept of immutability built into it. Strings in Java are immutable.
                 <br>This concept doesn't apply just to strings though. Numbers are also affected (everything in Clojure is immutable)<br>
                 user=> (def numbers [1 2 3])<br>
@@ -43,23 +43,24 @@ require_once ('navigation.php');
                 &nbsp;&nbsp;&nbsp;&nbsp;(fn [current-state]<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(merge-with + current-state {:cuddle-hunger-level 1<br> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :percent-deteriorated 1})))<br>
-                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
-                Pretty cool, huh? Now we can leverage the power of functional programming and pass this concept to a function that will do it for us!<br>
+                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br><br>
+                Pretty cool, huh? Now we can leverage the power of functional programming and pass this concept to a function that will do it for us!<br><br>
                 (defn increase-cuddle-hunger-level<br>
                 &nbsp;&nbsp;[zombie-state increase-by]<br>
                 &nbsp;&nbsp;(merge-with + zombie-state {:cuddle-hunger-level increase-by}))<br>
                 &nbsp;&nbsp;(increase-cuddle-hunger-level @fred 10)<br>
-                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
-                this is just a return however and a dereference of fred still results in <br>
+                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br><br>
+                this is just a return however and a dereference of fred still results in <br><br>
                 @fred<br>
-                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br>
-                  but we use this function with swap, and...<br>
+                ; => {:cuddle-hunger-level 2, :percent-deteriorated 1}<br><br>
+                  but we use this function with swap, and...<br><br>
                 (swap! fred increase-cuddle-hunger-level 10)<br>
                 ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
                 <br>
                 @fred<br>
-                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br>
-                And now since we used swap!, when you dereference our zombie friend fred, he's actually been changed! I hope that this has been somewhat informative. If you want more information here's my source and where I've gathered about 80% of my Clojure information from. It's presented in an awesome, fun, and informative manner, plus it's FREE!!! https://www.braveclojure.com/
+                ; => {:cuddle-hunger-level 12, :percent-deteriorated 1}<br><br>
+                And now since we used swap!, when you dereference our zombie friend fred, he's actually been changed! I hope that this has been somewhat informative. If you want more information here's my source and where I've gathered about 80% of my Clojure information from. It's presented in an awesome, fun, and informative manner, plus it's FREE!!!<br>
+                <a href="https://www.braveclojure.com/">
 
             </p>
             
